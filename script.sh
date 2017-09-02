@@ -108,7 +108,7 @@ while true ; do
              args="res_latency=NULL"
              echo "Target $REQ_ID ($REQ_IP) is unreachable"
          else
-             pattern='(rtt|round-trip) min/avg/max.*= (.*)/(.*)/(.*)/(.*) ms'
+             pattern='(rtt|round-trip) min/avg/max.*= (.*)/(.*)/(.*)(/(.*))? ms'
              if [[ $output =~ $pattern ]]; then
                  minrtt=${BASH_REMATCH[1]}
                  avgrtt=${BASH_REMATCH[2]}
