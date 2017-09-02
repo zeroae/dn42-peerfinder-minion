@@ -1,3 +1,3 @@
-# peerfinder-docker
+# dn42-peerfinder-minion
 
-The docker image for running DN42's PeerFinder
+Docker image for DN42's PeerFinder minion
